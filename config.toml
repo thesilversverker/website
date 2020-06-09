@@ -1,4 +1,50 @@
 baseURL = "http://gnew.me/"
 languageCode = "en-us"
-title = "The SilverSverker's Site"
-theme = "kraiklyn"
+title = "Idiot in Infosec"
+theme = "hugo-notepadium-master"
+copyright = "©2020 Curtis Agnew."
+
+
+enableRobotsTXT = true
+
+# Enable Disqus
+#disqusShortname = "XXX"
+
+# Google Analytics
+#googleAnalytics = "UA-123-45"
+
+# enable JS highlight
+[params.syntax]
+use = "hljs"  # 1. prismjs 2. hljs 3. none
+theme = "dracula"
+darkTheme = "xcode-dark"  # apply this theme in dark mode
+
+[markup.highlight]
+codeFences = true
+noClasses = false
+
+[markup.goldmark.renderer]
+unsafe = true  # enable raw HTML in Markdown
+
+[params]
+style = "dark"  # default: auto. light: light theme, dark: dark theme, auto: based on system.
+dateFormat = "Monday, January 2, 2006"  # if unset, default is "2006-01-02"
+logo = ""  # if you have a logo png
+slogan = "I've googled it before, so you don't have to"
+license = ""  # CC License
+fullRss = false # Puts entire HTML post into rss 'description' tag. If unset, default is false.
+
+
+[params.nav]
+showCategories = true       # /categories/
+showTags = true             # /tags/
+
+# custom navigation items
+
+[[params.nav.custom]]
+title = "About"
+url = "/about/"
+
+[params.profile]
+  enable = true
+  avatar = "/img/avatar.jpg"
