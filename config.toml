@@ -2,7 +2,7 @@ baseURL = "http://gnew.me/"
 languageCode = "en-us"
 title = "Idiot in Infosec"
 theme = "hugo-notepadium-master"
-copyright = "©2020 Curtis Agnew."
+copyright = "©2020"
 
 
 enableRobotsTXT = true
