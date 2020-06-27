@@ -1,4 +1,4 @@
-baseURL = "http://gnew.me/"
+baseURL = "http://interestininfosec.gnew.me/"
 languageCode = "en-us"
 title = "Interest In Infosec"
 theme = "hugo-notepadium-master"
