@@ -1,6 +1,6 @@
 baseURL = "http://gnew.me/"
 languageCode = "en-us"
-title = "Idiot in Infosec"
+title = "Interest In Infosec"
 theme = "hugo-notepadium-master"
 copyright = "©2020"
 
