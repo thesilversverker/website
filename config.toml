@@ -1,50 +1,85 @@
-baseURL = "http://interestininfosec.gnew.me/"
+baseURL = "https://interestinginfosec.gnew.me/"
 languageCode = "en-us"
 title = "Interest In Infosec"
-theme = "hugo-notepadium-master"
 copyright = "©2020"
-
-
-enableRobotsTXT = true
-
-# Enable Disqus
-#disqusShortname = "XXX"
-
-# Google Analytics
-#googleAnalytics = "UA-123-45"
-
-# enable JS highlight
-[params.syntax]
-use = "hljs"  # 1. prismjs 2. hljs 3. none
-theme = "dracula"
-darkTheme = "xcode-dark"  # apply this theme in dark mode
-
-[markup.highlight]
-codeFences = true
-noClasses = false
-
-[markup.goldmark.renderer]
-unsafe = true  # enable raw HTML in Markdown
+theme = "bodhi"
 
 [params]
-style = "auto"  # default: auto. light: light theme, dark: dark theme, auto: based on system.
-dateFormat = "Monday, January 2, 2006"  # if unset, default is "2006-01-02"
-logo = ""  # if you have a logo png
-slogan = "I've googled it before, so you don't have to"
-license = ""  # CC License
-fullRss = false # Puts entire HTML post into rss 'description' tag. If unset, default is false.
+    subtitle = "Subtitle"
+    avatar = "/img/avatar.png"
+    author = "Curtis Agnew"
+    commentoSrc = "https://commento.example.com/js/commento.js"
+    footerMessage = "Footer Message."
+    disableSearch = true
 
+[[menu.main]]
+name = "home"
+url = "/"
+weight = 1
 
-[params.nav]
-showCategories = true       # /categories/
-showTags = true             # /tags/
-
-# custom navigation items
-
-[[params.nav.custom]]
-title = "About"
+[[menu.main_right]]
+name = "about"
 url = "/about/"
+weight = 1
 
-[params.profile]
-  enable = true
-  avatar = "/img/avatar.jpg"
+[[menu.nav]]
+name = "projects"
+url = "/projects"
+weight = 2
+
+#[[menu.nav]]
+#parent = "projects"
+#name = "bodhi"
+#url = "/projects/splunk"
+#weight = 1
+
+[[menu.nav]]
+name = "posts"
+url = "/posts/"
+weight = 1
+
+#[[menu.nav]]
+#parent = "posts"
+#name = "archive"
+#url = "/archive"
+#weight = 1
+
+#[[menu.nav]]
+#parent = "posts"
+#name = "tags"
+#url = "/tags"
+#weight = 2
+
+#[[menu.nav]]
+#parent = "posts"
+#name = "categories"
+#url = "/categories"
+#weight = 3
+
+[markup.goldmark.renderer]
+unsafe= true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+#[params.fathomAnalytics]
+#    siteID = "XXXXX"
+#    serverURL = "https://fathom.myselfhostedinstance.net"
+
+[markup]
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    lineNoStart = 1
+    noClasses = true
+    style = "emacs"
+    tabWidth = 4
+
+[[params.social]]
+name = "Github"
+icon = "github"
+url = "https://github.com/thesilversverker/"
+[[params.social]]
+name = "Twitter"
+icon = "twitter"
+url = "https://twitter.com/silversverker/"

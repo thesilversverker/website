@@ -1,7 +1,7 @@
 ---
 title: "About Me"
 date: 2020-06-08T22:03:33-04:00
-draft: true
+draft: false
 ---
 
 This is a test About-me page. This blog will cover the bits of information that I uncover relating to:
