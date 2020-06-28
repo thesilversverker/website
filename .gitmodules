@@ -1,3 +1,6 @@
 [submodule "themes/bodhi"]
 	path = themes/bodhi
 	url = https://github.com/rhnvrm/bodhi.git
+[submodule "public"]
+	path = public
+	url = https://github.com/thesilversverker/staticsite.git
