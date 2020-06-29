@@ -2,84 +2,53 @@ baseURL = "https://interestinginfosec.gnew.me/"
 languageCode = "en-us"
 title = "Interest In Infosec"
 copyright = "©2020"
-theme = "bodhi"
+theme = "m10c"
+paginate = 5
 
 [params]
-    subtitle = "Subtitle"
-    avatar = "/img/avatar.png"
-    author = "Curtis Agnew"
-    commentoSrc = "https://commento.example.com/js/commento.js"
-    footerMessage = "Footer Message."
-    disableSearch = true
+  author = "Curtis Agnew"
+  description = "A repository of projects and adventures. Need to reach me?"
+  avatar = "/img/avatar.png"
 
-[[menu.main]]
-name = "home"
-url = "/"
-weight = 1
-
-[[menu.main_right]]
-name = "about"
-url = "/about/"
-weight = 1
-
-[[menu.nav]]
-name = "projects"
-url = "/projects"
-weight = 2
-
-#[[menu.nav]]
-#parent = "projects"
-#name = "bodhi"
-#url = "/projects/splunk"
-#weight = 1
-
-[[menu.nav]]
-name = "posts"
-url = "/posts/"
-weight = 1
-
-#[[menu.nav]]
-#parent = "posts"
-#name = "archive"
-#url = "/archive"
-#weight = 1
-
-#[[menu.nav]]
-#parent = "posts"
-#name = "tags"
-#url = "/tags"
-#weight = 2
-
-#[[menu.nav]]
-#parent = "posts"
-#name = "categories"
-#url = "/categories"
-#weight = 3
-
-[markup.goldmark.renderer]
-unsafe= true
-
-[outputs]
-  home = ["HTML", "RSS", "JSON"]
-
-#[params.fathomAnalytics]
-#    siteID = "XXXXX"
-#    serverURL = "https://fathom.myselfhostedinstance.net"
-
-[markup]
-  [markup.highlight]
-    codeFences = true
-    guessSyntax = true
-    lineNoStart = 1
-    noClasses = true
-    style = "emacs"
-    tabWidth = 4
+[[params.about]]
+  url = "/about/"
 
 [[params.social]]
-name = "Github"
-icon = "github"
-url = "https://github.com/thesilversverker/"
+  name = "github"
+  url = "https://github.com/thesilversverker/"
+  
 [[params.social]]
-name = "Twitter"
-icon = "twitter"
-url = "https://twitter.com/silversverker/"
+  name = "twitter"
+  url = "https://twitter.com/silversverker/"
+
+[[params.social]]
+  name = "reddit"
+  url = "https://reddit.com/u/thesilversverker"  
+
+[[params.social]]
+  name = "linkedin"
+  url = "https://linkedin.com/curtis.agnew"
+
+  # Brown theme
+  #[params.style]
+  #  darkestColor = "#463625"
+  #  darkColor = "#2a3738"
+  #  primaryColor = "#eeee6a"
+  #  lightColor = "#96a879"
+  #  lightestColor = "#ffffff"
+
+  # Green theme
+  #[params.style]
+  #  darkestColor = "#315659"
+  #  darkColor = "#253031"
+  #  primaryColor = "#dad865"
+  #  lightColor = "#96a879"
+  #  lightestColor = "#fff"
+
+  # Red and black theme
+  #[params.style]
+  #  darkestColor = "#d35050"
+  #  darkColor = "#212121"
+  #  primaryColor = "#ffffff"
+  #  lightColor = "#a2a2a2"
+  #  lightestColor = "#d3d3d3"

@@ -1,0 +1,85 @@
+baseURL = "https://interestinginfosec.gnew.me/"
+languageCode = "en-us"
+title = "Interest In Infosec"
+copyright = "©2020"
+theme = "bodhi"
+
+[params]
+    subtitle = "Subtitle"
+    avatar = "/img/avatar.png"
+    author = "Curtis Agnew"
+    commentoSrc = "https://commento.example.com/js/commento.js"
+    footerMessage = "Footer Message."
+    disableSearch = true
+
+[[menu.main]]
+name = "home"
+url = "/"
+weight = 1
+
+[[menu.main_right]]
+name = "about"
+url = "/about/"
+weight = 1
+
+[[menu.nav]]
+name = "projects"
+url = "/projects"
+weight = 2
+
+#[[menu.nav]]
+#parent = "projects"
+#name = "bodhi"
+#url = "/projects/splunk"
+#weight = 1
+
+[[menu.nav]]
+name = "posts"
+url = "/posts/"
+weight = 1
+
+#[[menu.nav]]
+#parent = "posts"
+#name = "archive"
+#url = "/archive"
+#weight = 1
+
+#[[menu.nav]]
+#parent = "posts"
+#name = "tags"
+#url = "/tags"
+#weight = 2
+
+#[[menu.nav]]
+#parent = "posts"
+#name = "categories"
+#url = "/categories"
+#weight = 3
+
+[markup.goldmark.renderer]
+unsafe= true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+#[params.fathomAnalytics]
+#    siteID = "XXXXX"
+#    serverURL = "https://fathom.myselfhostedinstance.net"
+
+[markup]
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    lineNoStart = 1
+    noClasses = true
+    style = "emacs"
+    tabWidth = 4
+
+[[params.social]]
+name = "Github"
+icon = "github"
+url = "https://github.com/thesilversverker/"
+[[params.social]]
+name = "Twitter"
+icon = "twitter"
+url = "https://twitter.com/silversverker/"
